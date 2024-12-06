@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 88</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        let somaPares = 0, somaImpares = 0;
+        let contadorPares = 0, contadorImpares = 0;
+    
+        for (let n = 0; n < 5; n++) {
+            numeros[n] = parseInt(prompt("Digite um número:"));
+            if (numeros[n] % 2 === 0) {
+                somaPares += numeros[n];
+                contadorPares++;
+            } else {
+                somaImpares += numeros[n];
+                contadorImpares++;
+            }
+        }
+    
+        let mediaPares = contadorPares > 0 ? somaPares / contadorPares : 0;
+        let mediaImpares = contadorImpares > 0 ? somaImpares / contadorImpares : 0;
+    
+        document.write("Média dos valores pares: " + mediaPares + "<br>");
+        document.write("Média dos valores ímpares: " + mediaImpares);
+    </script>
+</body>
+</html>

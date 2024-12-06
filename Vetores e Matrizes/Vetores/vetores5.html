@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 85</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        let maior = -Infinity;
+        let menor = Infinity;
+        for (let n = 0; n < 5; n++) {
+            numeros[n] = parseInt(prompt("Digite um número:"));
+            if (numeros[n] > maior) {
+                maior = numeros[n];
+            }
+            if (numeros[n] < menor) {
+                menor = numeros[n];
+            }
+        }
+    
+        document.write("O maior número é: " + maior + "<br>");
+        document.write("O menor número é: " + menor);
+    </script>
+</body>
+</html>

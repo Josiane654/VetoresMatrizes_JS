@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 109</title>
+</head>
+<body>
+    <script>
+        let matriz = [];
+        let identidade = true;
+    
+        for (let n = 0; n < 3; n++) {
+            matriz[n] = [];
+            for (let i = 0; i < 3; i++) {
+                matriz[n][i] = parseInt(prompt(`Digite o número para a posição [${n}][${i}]:`));
+            }
+        }
+    
+        for (let n = 0; n < 3; n++) {
+            for (let i = 0; i < 3; i++) {
+                if ((n === i && matriz[n][i] !== 1) || (n !== i && matriz[n][i] !== 0)) {
+                    identidade = false;
+                    break;
+                }
+            }
+            if (!identidade) break;
+        }
+    
+        if (identidade) {
+            document.write("A matriz é identidade.");
+        } else {
+            document.write("A matriz não é identidade.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 107</title>
+</head>
+<body>
+    <script>
+        let matriz = [];
+        let produto = 1;
+    
+        for (let n = 0; n < 3; n++) {
+            matriz[n] = [];
+            for (let i = 0; i < 3; i++) {
+                matriz[n][i] = parseInt(prompt(`Digite o número para a posição [${n}][${i}]:`));
+            }
+        }
+    
+        for (let n = 0; n < 3; n++) {
+            produto *= matriz[n][2 - n]; // Elementos da diagonal secundária
+        }
+    
+        document.write("O produto dos elementos da diagonal secundária é: " + produto);
+    </script>
+</body>
+</html>

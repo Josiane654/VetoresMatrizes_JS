@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 106</title>
+</head>
+<body>
+    <script>
+        let matriz1 = [];
+        let matriz2 = [];
+        let iguais = true;
+    
+        for (let n = 0; n < 2; n++) {
+            matriz1[n] = [];
+            matriz2[n] = [];
+            for (let i = 0; i < 2; i++) {
+                matriz1[n][i] = parseInt(prompt(`Digite o número para a posição [${n}][${i}] da primeira matriz:`));
+                matriz2[n][i] = parseInt(prompt(`Digite o número para a posição [${n}][${i}] da segunda matriz:`));
+                if (matriz1[n][i] !== matriz2[n][i]) {
+                    iguais = false;
+                }
+            }
+        }
+    
+        if (iguais) {
+            document.write("As matrizes são iguais.");
+        } else {
+            document.write("As matrizes não são iguais.");
+        }
+    </script>
+</body>
+</html>

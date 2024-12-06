@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 87</title>
+</head>
+
+<body>
+    <script>
+        let numeros = [];
+        let contadorPositivos = 0;
+        for (let n = 0; n < 10; n++) {
+            numeros[n] = parseInt(prompt("Digite um número:"));
+            if (numeros[n] > 0) {
+                contadorPositivos++;
+            }
+        }
+
+        document.write("A quantidade de números positivos é: " + contadorPositivos);
+    </script>
+</body>
+
+</html>

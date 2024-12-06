@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 92</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        for (let n = 0; n < 5; n++) {
+            numeros[n] = parseInt(prompt("Digite um número:"));
+        }
+    
+        numeros.sort((a, b) => b - a);
+    
+        document.write("Os números em ordem decrescente são:<br>");
+        for (let n = 0; n < 5; n++) {
+            document.write(numeros[n] + "<br>");
+        }
+    </script>
+</body>
+</html>

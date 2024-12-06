@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 91</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        let somaPositivos = 0, somaNegativos = 0;
+    
+        for (let n = 0; n < 10; n++) {
+            numeros[n] = parseInt(prompt("Digite um número:"));
+            if (numeros[n] > 0) {
+                somaPositivos += numeros[n];
+            } else if (numeros[n] < 0) {
+                somaNegativos += numeros[n];
+            }
+        }
+    
+        document.write("Soma dos valores positivos: " + somaPositivos + "<br>");
+        document.write("Soma dos valores negativos: " + somaNegativos);
+    </script>
+</body>
+</html>
